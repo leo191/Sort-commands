@@ -12,3 +12,4 @@ Feb 1 to Feb 15
     awk '{if ($6 == "Feb" && $7 <= 15) print $9}
 
 
+.
