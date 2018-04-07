@@ -1,0 +1,14 @@
+To find files between dates
+Feb 1 to Feb 15
+
+    FIND
+
+    find . -maxdepth 1 -type f -name "[A-Za-z]*" -newermt   "2018-01-31" !    -newermt "2018-03-20" | cut -d"/" -f 2
+
+
+
+    AWK
+
+    awk '{if ($6 == "Feb" && $7 <= 15) print $9}
+
+
